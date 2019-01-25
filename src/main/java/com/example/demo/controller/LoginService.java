@@ -1,0 +1,13 @@
+package com.example.demo.controller;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class LoginService 
+{
+	public boolean validateUser(String userid, String password) {
+	
+		return userid.equalsIgnoreCase("narayan")
+				&& password.equalsIgnoreCase("shah");
+	}
+}
